@@ -5,7 +5,7 @@ import FetchApi from "../global/fetch-api";
 /* ini berisi seluruh komponen yang ditampung */
 export default function App() {
   const apiKey = import.meta.env.VITE_API_KEY;
-  const [data, error, loading] = FetchApi(`http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=indonesia&aqi=no`);
+  const [data, error, loading] = FetchApi(`https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=indonesia&aqi=no`);
 
   if (loading) {
     return <div>Loading...</div>;
